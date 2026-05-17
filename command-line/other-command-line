@@ -1,0 +1,36 @@
+# 🖥️ Terminal (Command Line) Asosiy Buyruqlari Qo'llanmasi
+
+Ushbu qo'llanmada kundalik dasturlash jarayonida terminal (iTerm2, Bash, Zsh) bilan tez va samarali ishlash uchun eng ko'p kerak bo'ladigan buyruqlar jamlangan.
+
+---
+
+## 1. 📂 Navigatsiya va Joylashuvni Aniqlash
+
+Kompyuter papkalari ichida "sichqonchasiz" harakatlanish uchun asosiy buyruqlar:
+
+| Buyruq | Vazifasi | Misol |
+| :--- | :--- | :--- |
+| `pwd` | Hozirgi turgan papkaning to'liq manzilini ko'rsatadi | `pwd` |
+| `ls` | Papka ichidagi fayllar ro'yxatini chiqaradi | `ls` |
+| `ls -la` | Yashirin fayllar (`.env`, `.git`) va batafsil ma'lumotlarni ko'rsatadi | `ls -la` |
+| `cd [papka]` | Ko'rsatilgan papka ichiga kiradi | `cd Desktop/Projects` |
+| `cd ..` | Bir qadam yuqoridagi (orqaga) papkaga qaytadi | `cd ..` |
+| `cd ~` | To'g'ridan-to'g'ri foydalanuvchining asosiy (Home) papkasiga qaytadi | `cd ~` |
+
+---
+
+## 2. 🛠️ Fayl va Folderlar Yaratish
+
+| Buyruq | Vazifasi | Misol |
+| :--- | :--- | :--- |
+| `mkdir [nom]` | Yangi bo'sh papka (folder) yaratadi | `mkdir yangi_loyiha` |
+| `mkdir -p` | Ichma-ich joylashgan bir nechta papkalarni zanjir simon yaratadi | `mkdir -p backend/src/models` |
+| `touch [nom]` | Yangi bo'sh fayl yaratadi | `touch server.js index.html` |
+
+---
+
+## 3. 🔍 Fayllarni Ko'rish va Qidirish
+
+* 📄 **`cat [fayl_nomi]`** — Kichikroq fayllar ichidagi matnni ochib o'tirmasdan, to'g'ridan-to'g'ri terminal ekranida o'qish uchun.
+  ```bash
+  cat package.json
